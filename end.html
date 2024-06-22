@@ -54,9 +54,9 @@
     </div>
   </div>
   <script>
-    // Retrieve the score from localStorage and display it
-    const finalScore = localStorage.getItem("mostRecentScore");
-    document.getElementById("finalScore").innerText = finalScore;
+    const finalScore = document.getElementById("finalScore");
+    const mostRecentScore = localStorage.getItem("mostRecentScore");
+    finalScore.innerText = `Your Score: ${mostRecentScore}`;
   </script>
 </body>
 
